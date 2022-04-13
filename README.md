@@ -5,6 +5,7 @@ control the scheduling of Map and reduce jobs by the master to its n number of w
 In this case, one master and three workers are used. The Master process makes scheduling
 decisions and accordingly passes off tasks to the Worker processes and informs the
 Master when a task completes its execution.
+
 The Worker processes listen for Task Launch messages from the Master. On receiving a
 launch message, the Worker adds the task to the execution pool of the machine it runs
 on.In this case, we will work with one master and three workers. The scheduling
